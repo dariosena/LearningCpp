@@ -27,3 +27,8 @@
 *.exe
 *.out
 *.app
+
+.project
+.cproject
+.settings/
+.autotools
