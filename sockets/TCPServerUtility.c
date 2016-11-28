@@ -1,3 +1,5 @@
+#include<stdio.h>
+#include <sys/types.h>
 
 void HandleTCPClient(int clntSocket) {
 	char buffer[BUFSIZ]; // Buffer for echo string

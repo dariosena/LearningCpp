@@ -5,7 +5,7 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
-#include <Pratical.h>
+#include "Pratical.h"
 
 static const int MAXPENDING = 5; // Maximum outstanding connection requests
 
@@ -45,7 +45,7 @@ int main (int argc, char *argv[]) {
 	for (;;) { // Run forever
 		struct sockaddr_in clntAddr; // Client Address
 		// Set length of client address structure (in-out parameter)
-		socklen_t clnAddrLen = sizeof(clnAddr);
+		socklen_t clnAddrLen = sizeof(clntAddr);
 
 		// Wait for a client to connect
 		int clntSock = accept(servSock, (struct sockaddr *) &clntAddr, &clnAddrLen);
