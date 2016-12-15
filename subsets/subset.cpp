@@ -34,13 +34,13 @@ void subset(int arr[], int size, int left, int index, list<int> &l, map<int, lis
 }
 
 int main(){
-    int array[3]={1,2,3};
+    int array[5]={1,2,3,4,5};
     list<int> lt;
 
     map<int, list<int> > all;
 
 
-    subset(array,3,2,0,lt,all);
+    subset(array,5,4,0,lt,all);
 
     cout << "Map position " << 3 << endl;
 
