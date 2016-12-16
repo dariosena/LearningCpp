@@ -30,7 +30,6 @@ void subset(int arr[], int size, int left, int index, list<int> &l, map<int, lis
         subset(arr,size,left-1,i+1,l, all);
         l.pop_back();
     }
-
 }
 
 int main(){
@@ -42,16 +41,15 @@ int main(){
 
     subset(array,5,4,0,lt,all);
 
-    cout << "Map position " << 3 << endl;
+//    cout << "Map position " << 3 << endl;
+//
+//    list<int> temp = all.at(3);
+//
+//	// Iterate and print values of the list
+//	for (int n : temp) {
+//		cout << n << ' ';
+//	}
 
-    list<int> temp = all.at(3);
-
-	// Iterate and print values of the list
-	for (int n : temp) {
-		cout << n << ' ';
-	}
-
-	cout << endl;
 	cout << total << endl;
 
     return 0;
