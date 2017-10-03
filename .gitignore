@@ -32,3 +32,5 @@
 .cproject
 .settings/
 .autotools
+
+Debug/
